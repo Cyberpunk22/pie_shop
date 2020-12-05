@@ -1,0 +1,146 @@
+html, body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(237, 253, 237);
+    /* max-width: 1000px; */
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 99%;
+    /* padding: 0.75rem 1.25 rem; */
+    /* Shaila, for every container as html kind of keeps proceeding and touches the end of screen, just create a limit to that by MAX WIDTH for containers  */
+}
+
+
+/* ------- header------  */
+header{
+background-color: orange;
+display: inline-block;
+text-align: left;
+width: 100%;
+padding: 15px;
+font-size: 20px;
+}
+
+nav span{
+    padding-left: 20px ;
+    margin-left: 30px;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* -------- main------  */
+/* 
+.main{
+
+} */
+
+.banner{
+    background-image: url('https://wallpaperfx.com/view_image/apple-pie-1600x900-wallpaper-16933.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 60px;
+    margin: auto;
+    height: 30rem;
+    /* shaila remember the background syntaxes- cover, and height for banner */
+}
+
+.banner img{
+   width: 15rem ;
+   display: block;
+   margin: auto;
+   /* Shaila you want anything dragged from left into the middle, make it display: BLOCK then use MARGIN auto  */
+   padding-top: 5rem;
+}
+
+#aboutus{
+    display: flex;
+    align-items: flex-start;
+    /* shaila, here is a great learning, when you had all the h1,img,p inside one class=container, and you used flex for that container, all the components lined up horizontally but you only wanted the 'img' and the writing section to line up, so you had to introduce a div containing the writings and the image outside the div. */
+    padding: 0 1rem;
+}
+
+
+#aboutus img{
+ height: 10%;
+ width: 10%;
+ margin-right: 5%;
+ /* using margin (not padding) doesn't change the shape  */
+}
+
+#aboutus,
+#rating,
+.location,
+.gallery{
+    margin: 4em auto;
+    /* to place the section a little bit down we used the MARGIN here.  */
+}
+
+#rating{
+    background-color: orange;
+    color: rgb(207, 57, 57);
+    height: 15rem;
+    /* everytime you having blackground-color, you have heights  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+#rating h2{
+    font-size: 2.5rem;
+}
+
+
+
+
+#gall img{
+ height: 300px;
+ width: 30%;
+ /* Shaila this is so good and important that you can use % when you want something to measure in comparison to parent 1000px width or any length, the images gets centerlised easily*/
+ display: block;
+ float: left;
+ margin: 1.5%;
+
+}
+
+.clearfix{
+    clear: both;
+}
+
+.location img{
+height: 400px;
+width: 100%;
+}
+
+.location h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+footer{
+    background-color: orange;
+    display: flex;
+    height: 150px;
+    font-size: 15px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    padding: 5em 0;
+}
